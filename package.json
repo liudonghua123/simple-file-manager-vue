@@ -2,12 +2,27 @@
   "name": "simple-file-manager",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/simple-file-manager.common.js",
+  "unpkg": "dist/simple-file-manager.umd.min.js",
+  "browser": {
+    "./sfc": "src/components/SimpleFileManager.vue"
+  },
+  "author": {
+    "name": "Donghua Liu",
+    "email": "liudonghua123@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/liudonghua123/simple-file-manager/issues"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name simple-file-manager src/components/SimpleFileManager.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "vue-context": "^5.1.0"
+  },
+  "peerDependencies": {
     "ant-design-vue": "^1.2.4",
     "core-js": "^3.6.4",
     "vue": "^2.6.11"
@@ -36,10 +51,29 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "comma-dangle": [
+        "off",
+        {
+          "arrays": "always",
+          "objects": "always",
+          "imports": "never",
+          "exports": "never",
+          "functions": "never"
+        }
+      ],
+      "no-unused-vars": "off"
+    }
   },
   "browserslist": [
     "> 1%",
     "last 2 versions"
+  ],
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
   ]
 }
