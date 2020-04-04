@@ -1,5 +1,5 @@
 {
-  "name": "simple-file-manager",
+  "name": "simple-file-manager-vue-example",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,7 +11,7 @@
     "ant-design-vue": "^1.2.4",
     "core-js": "^3.6.4",
     "monaco-editor": "^0.20.0",
-    "simple-file-manager": "..",
+    "simple-file-manager-vue": "..",
     "vue": "^2.6.11",
     "vue-monaco": "^1.1.0"
   },

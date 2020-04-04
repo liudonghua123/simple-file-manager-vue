@@ -1,4 +1,4 @@
-# simple-file-manager
+# simple-file-manager-vue
 
 ## Project setup
 ```

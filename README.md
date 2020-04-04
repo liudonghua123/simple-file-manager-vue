@@ -1,4 +1,4 @@
-# simple-file-manager
+# simple-file-manager-vue
 
 This is a simple file manager for personal usage, it's just like some other file manager as the followings:
 
@@ -7,18 +7,18 @@ This is a simple file manager for personal usage, it's just like some other file
 - https://github.com/talented/FileManager
 - ...
 
-But it's build from scratch using ant-design-vue and vue-context. You can preview its appearence on https://liudonghua123.github.io/simple-file-manager/ 
+But it's build from scratch using ant-design-vue and vue-context. You can preview its appearence on https://liudonghua123.github.io/simple-file-manager-vue/ 
 
 ## How to use it
 
-1. yarn add simple-file-manager
+1. yarn add simple-file-manager-vue
 2. use the component like this
 
    ```js
-    import SimpleFileManager from "simple-file-manager";
+    import SimpleFileManager from "simple-file-manager-vue";
     // register SimpleFileManager component in components of vue
     // add the following in template
-    <simple-file-manager
+    <simple-file-manager-vue
       :uploadEnable="uploadEnable"
       :showFilesInNavigationTree="showFilesInNavigationTree"
       :showFilesInContentView="showFilesInContentView"

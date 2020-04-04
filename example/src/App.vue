@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <a-card title="simple-file-manager component">
+    <a-card title="simple-file-manager-vue component">
       <a-form layout="inline">
         <a-form-item label="Settings: " />
         <a-form-item label="uploadEnable">
@@ -40,10 +40,11 @@
 </template>
 
 <script>
-import SimpleFileManager from "simple-file-manager";
+import SimpleFileManager from "simple-file-manager-vue";
 import MonacoEditor from "vue-monaco";
 import moment from "moment";
 import data from "./sample-data";
+import "simple-file-manager-vue/dist/simple-file-manager-vue.css";
 
 export default {
   name: "app",

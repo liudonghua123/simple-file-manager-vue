@@ -1,9 +1,8 @@
 {
-  "name": "simple-file-manager",
+  "name": "simple-file-manager-vue",
   "version": "0.1.0",
-  "private": true,
-  "main": "dist/simple-file-manager.common.js",
-  "unpkg": "dist/simple-file-manager.umd.min.js",
+  "main": "dist/simple-file-manager-vue.common.js",
+  "unpkg": "dist/simple-file-manager-vue.umd.min.js",
   "browser": {
     "./sfc": "src/components/SimpleFileManager.vue"
   },
@@ -12,11 +11,11 @@
     "email": "liudonghua123@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/liudonghua123/simple-file-manager/issues"
+    "url": "https://github.com/liudonghua123/simple-file-manager-vue/issues"
   },
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name simple-file-manager src/components/SimpleFileManager.vue",
+    "build": "vue-cli-service build --target lib --name simple-file-manager-vue src/components/SimpleFileManager.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
