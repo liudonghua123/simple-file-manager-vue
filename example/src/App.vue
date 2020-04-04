@@ -34,20 +34,22 @@
       />
     </a-card>
     <a-modal title="Data Editor" v-model="visible" @ok="handleOk" :width="960">
-      <a-textarea placeholder="Input data" :rows="10" v-model="data" />
+      <MonacoEditor class="editor" v-model="data" language="json" />
     </a-modal>
   </div>
 </template>
 
 <script>
 import SimpleFileManager from "simple-file-manager";
-import data from "./sample-data";
+import MonacoEditor from "vue-monaco";
 import moment from "moment";
+import data from "./sample-data";
 
 export default {
   name: "app",
   components: {
-    SimpleFileManager
+    SimpleFileManager,
+    MonacoEditor
   },
   data() {
     return {
@@ -167,5 +169,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+}
+
+.editor {
+  width: 900px;
+  height: 400px;
 }
 </style>

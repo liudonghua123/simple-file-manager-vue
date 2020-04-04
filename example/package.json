@@ -10,10 +10,11 @@
   "dependencies": {
     "ant-design-vue": "^1.2.4",
     "core-js": "^3.6.4",
+    "monaco-editor": "^0.20.0",
+    "simple-file-manager": "..",
     "vue": "^2.6.11",
-    "simple-file-manager": ".."
+    "vue-monaco": "^1.1.0"
   },
-  "peerDependencies": {},
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.2.0",
     "@vue/cli-plugin-eslint": "^4.2.0",
@@ -23,8 +24,12 @@
     "eslint-plugin-vue": "^6.1.2",
     "less": "^2.7.3",
     "less-loader": "^4.1.0",
+    "monaco-editor-webpack-plugin": "^1.9.0",
     "vue-cli-plugin-ant-design": "^1.0.0",
     "vue-template-compiler": "^2.6.11"
+  },
+  "resolutions": {
+    "monaco-editor": "^0.20.0"
   },
   "eslintConfig": {
     "root": true,
